@@ -1,5 +1,5 @@
 """
-Assemble and sort some COVID reads...
+Generate microbial abundances
 """
 
 import subprocess
