@@ -39,27 +39,25 @@ def profile(input_file: LatchFile, nproc:int, sequence_type: seqType) -> LatchFi
 
 @workflow
 def metaphlan(input_file: LatchFile, sequence_type: seqType, nproc: int) -> LatchFile:
-    """Description...
+    """Compute microbial abundances from metagenomic data
 
     Metaphlan
     ----
 
     MetaPhlAn is a computational tool for profiling the composition of microbial communities (Bacteria, Archaea and Eukaryotes) from metagenomic shotgun sequencing data (i.e. not 16S) with species-level. 
 
-    > Regular markdown constructs work as expected.
+    * Input File Types (fasta, fastq, sam, bowtie2out)
+    * Output file (.txt): This file contains the final computed organism abundances.
 
-    # Heading
-
-    * content1
-    * content2
+    Organism abundances are listed one clade per line, tab-separated from the clade's percent abundance
 
     __metadata__:
         display_name: Metaphlan
         author:
             name: Krystal Ching
-            email:
-            github: 
-        repository:
+            email: klc595@nyu.edu
+            github: https://github.com/kriitoh
+        repository: https://github.com/kriitoh/metaphlan
         license:
             id: MIT
 
